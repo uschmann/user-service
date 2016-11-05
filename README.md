@@ -2,7 +2,7 @@
 
 ## Routes
 
-### POST api/v1/register
+### `POST` api/v1/register
 #### Payload:
 ```json
 {
@@ -19,7 +19,7 @@
     "id": 19
 }
 ```
-### GET api/v1/activate/{activation_code}
+### `GET` api/v1/activate/{activation_code}
 #### Response:
 ```json
 {
@@ -33,14 +33,14 @@
 ```
 
 ## Environment Variables
-### MYSQL_HOST
-Host of the MYSQL server
-### MYSQL_DATABASE
-Database name of the MYSQL server
-### MYSQL_USER
-Name of the user that connects to MYSQL
-### MYSQL_PASSWORD
-Password of the MYSQL user
+### `MYSQL_HOST`
+Host of the MYSQL server. `Default: localhost`
+### `MYSQL_DATABASE`
+Database name of the MYSQL server. `Default: user_service`
+### `MYSQL_USER`
+Name of the user that connects to MYSQL. `Default: root`
+### `MYSQL_PASSWORD`
+Password of the MYSQL user. `Default: root`
 
 ## Start using local nodeJS
 ```bash
