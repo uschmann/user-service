@@ -1,7 +1,5 @@
 # user-service
 
-## Routes
-
 ## Usage
 First of all you need to install the dependencies using npm:
 ```bash
@@ -22,7 +20,7 @@ docker run -it -p 3000:3000 -e MYSQL_HOST=$(host ip) user-service
 ```bash
 MYSQL_HOST=192.168.99.100 MYSQL_DATABASE=user_service MYSQL_USER=root MYSQL_PASSWORD=root npm start
 ```
-
+## Routes
 ### `POST` api/v1/register
 #### Payload:
 ```json
