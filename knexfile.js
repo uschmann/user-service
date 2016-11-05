@@ -1,14 +1,13 @@
-// Update with your config settings.
 
 module.exports = {
 
   production: {
     client: 'mysql',
     connection: {
-      host : process.env.MYSQL_HOST,
-      database: process.env.MYSQL_DATABASE,
-      user:     process.env.MYSQL_USER,
-      password: process.env.MYSQL_PASSWORD
+      host : process.env.MYSQL_HOST || 'localhost',
+      database: process.env.MYSQL_DATABASE || 'user_service',
+      user:     process.env.MYSQL_USER || 'root',
+      password: process.env.MYSQL_PASSWORD || 'root'
     },
     pool: {
       min: 2,

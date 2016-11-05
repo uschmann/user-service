@@ -12,6 +12,7 @@ module.exports = (request, reply) => {
       user.set({activation_code: null});
       user.save()
       .then(user => {
+        console.log(`[user-service] Activated user: ${user}`);
         reply(user);
       });
   });
