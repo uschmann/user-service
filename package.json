@@ -1,0 +1,20 @@
+{
+  "name": "user-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andre Uschmann <mail@andre-uschmann.de> (http://andre-uschmann.de)",
+  "license": "ISC",
+  "dependencies": {
+    "bookshelf": "^0.10.2",
+    "boom": "^4.2.0",
+    "hapi": "^15.2.0",
+    "joi": "^9.2.0",
+    "knex": "^0.12.6",
+    "mysql": "^2.12.0",
+    "randomstring": "^1.1.5"
+  }
+}
