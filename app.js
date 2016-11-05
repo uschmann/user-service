@@ -7,7 +7,7 @@ server.connection({ port: 3000 });
 
 server.route({
   method: 'POST',
-  path: '/register',
+  path: '/api/v1/register',
   handler: require('./handler/registerHandler'),
   config: {
     validate: {
@@ -21,12 +21,12 @@ server.route({
 
 server.route({
   method: 'GET',
-  path: '/activate',
+  path: '/api/v1/activate/{activation_code}',
   handler: require('./handler/activateHandler'),
   config: {
     validate: {
-      query: {
-        code: Joi.string().required(),
+      params: {
+        activation_code: Joi.string().required(),
       }
     }
   }

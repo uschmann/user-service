@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "knex migrate:latest --env production",
+    "start": "node app.js"
   },
   "author": "Andre Uschmann <mail@andre-uschmann.de> (http://andre-uschmann.de)",
   "license": "ISC",

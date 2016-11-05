@@ -1,11 +1,8 @@
+const knexfile = require('./knexfile');
+
 const knex = require('knex')({
   client: 'mysql',
-  connection: {
-    host : '192.168.99.100',
-    user : 'root',
-    password : 'root',
-    database : 'user_service'
-  },
+  connection: knexfile.production.connection,
   migrations: {
     tableName: 'migrations'
   }

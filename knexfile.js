@@ -5,10 +5,10 @@ module.exports = {
   production: {
     client: 'mysql',
     connection: {
-      host : '192.168.99.100',
-      database: 'user_service',
-      user:     'root',
-      password: 'root'
+      host : process.env.MYSQL_HOST,
+      database: process.env.MYSQL_DATABASE,
+      user:     process.env.MYSQL_USER,
+      password: process.env.MYSQL_PASSWORD
     },
     pool: {
       min: 2,
